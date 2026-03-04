@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "Cal AI",
+    "slug": "cal-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.calai.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Cal AI needs camera access to scan your food and estimate calories.",
+        "NSPhotoLibraryUsageDescription": "Cal AI needs photo library access to analyze food photos."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.calai.app",
+      "permissions": ["CAMERA", "READ_EXTERNAL_STORAGE"]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      ["expo-camera", { "cameraPermission": "Cal AI needs camera access to scan your food." }],
+      ["expo-image-picker", { "photosPermission": "Cal AI needs photo library access to analyze food photos." }]
+    ]
+  }
+}
